@@ -1,0 +1,22 @@
+import random
+
+answer = list()
+
+for cnt in range(3): 
+    flg = True 
+
+    while flg:
+        flg = False
+        tmp = random.randint(0,9)
+
+        #print(f'tmp-->{tmp}')
+
+        for cnt2 in range(cnt):
+            if answer[cnt2] == tmp:
+                #print(f'tmp重複-->{tmp}')
+                flg = True
+                break
+        if flg == False:
+            answer.append(tmp)
+        
+print(answer)
