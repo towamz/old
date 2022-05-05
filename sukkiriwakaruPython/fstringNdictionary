@@ -1,0 +1,10 @@
+username = input('名前')
+userage = int(input('年齢'))
+
+user = {'name':username,'age':userage}
+
+print('{}歳、{}さん'.format(user['age'],user['name']))
+print(f'{user["age"]}歳、{user["name"]}さん')
+print(f"{user['age']}歳、{user['name']}さん")
+#print(f'{user[\'age\']}歳、{user[\'name\']}さん')
+#print(f"{user[\"age\"]}歳、{user[\"name\"]}さん")
